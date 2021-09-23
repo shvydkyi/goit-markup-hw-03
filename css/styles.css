@@ -7,6 +7,23 @@
   --background-secondary-color: #F5F4FA;
 }
 
+p,
+h1,
+h2,
+h3,
+{
+  margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
 body {
   font-family: Roboto, sans-serif; Raleway, sans-serif;
   background-color: var(--primary-white-color);
@@ -14,6 +31,40 @@ body {
 }
 
 /* Шапка сайта */
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  background-color: peachpuff;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts-link {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
 
 .header-link {
   font-style: normal;
@@ -23,6 +74,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
+
+
 
 /* Логотип */
 .logo {
