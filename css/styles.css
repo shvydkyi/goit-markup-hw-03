@@ -33,12 +33,11 @@ body {
 /* Шапка сайта */
 
 .container {
-  display: flex;
-  align-items: center;
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  
 
   background-color: peachpuff;
 }
@@ -54,17 +53,28 @@ body {
   align-items: center;
 }
 
+.header-item:not(:last-child) {
+margin-right: 50px;
+}
+
 .header-navigation {
   display: flex;
   align-items: center;
 }
 
-.header-contacts-link {
-  margin-left: auto;
+
+
+.header-contacts-container {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
 }
 
+.header-contacts-link:not(:first-child) {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+}
 
 .header-link {
   font-style: normal;
@@ -79,6 +89,7 @@ body {
 
 /* Логотип */
 .logo {
+  
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -88,6 +99,7 @@ body {
 }
 
 .logo-black {
+  margin-right: 93px;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -118,6 +130,7 @@ color: var(--primary-white-color)
 .link {
   text-decoration: none;
 }
+
 
 .header-contacts-link {
   font-family: Roboto;
