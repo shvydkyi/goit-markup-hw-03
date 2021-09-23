@@ -1,0 +1,248 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --primary-white-color: #ffffff;
+  --accent-color: #2196f3;
+  --background-color: #2f303a;
+  --background-secondary-color: #F5F4FA;
+}
+
+body {
+  font-family: Roboto, sans-serif; Raleway, sans-serif;
+  background-color: var(--primary-white-color);
+  letter-spacing: 0.03em;
+}
+
+/* Шапка сайта */
+
+.header-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+/* Логотип */
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+    color: var(--accent-color);
+}
+
+.logo-black {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+    color: var(--primary-text-color);
+}
+.logo-white {
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 1.19;
+color: var(--primary-white-color)
+}
+
+.logo-black:hover,
+.logo-black:focus,
+.logo-white:hover,
+.logo-white:focus {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.header-contacts-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.header-link:hover {
+  color: var(--accent-color);
+}
+
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+/* Герой */
+.hero {
+  background-color: var(--background-color);
+}
+
+.hero-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.hero-btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  border: none;
+}
+
+/* Преимущества */
+.features-title {
+font-weight: bold;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--primary-text-color);
+}
+
+.features-text {
+font-size: 14px;
+line-height: 1.71;
+color: var(--secondary-text-color);
+}
+
+/* Услуги */
+.services-title {
+font-weight: bold;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+color: var(--primary-text-color);
+}
+
+/* Команда */
+.team-section {
+  background-color: var(--background-secondary-color)
+}
+
+.team-title {
+font-weight: bold;
+font-size: 36px;
+line-height: 1.16x;
+color: var(--primary-text-color);
+}
+
+.team-name {
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+color: var(--primary-text-color);
+}
+
+.team-position {
+font-weight: normal;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+color: var(--secondary-text-color);
+}
+
+/* Футер */
+.footer-section {
+  background-color: var(--background-color);
+}
+.footer-adress {
+font-style: normal;
+font-size: 14px;
+line-height: 1.71;
+color: var(--primary-white-color);
+}
+
+.footer-contacts {
+font-style: normal;
+font-size: 14px;
+line-height: 1.71;
+color: rgba(255, 255, 255, 0.6);
+}
+
+/* ----------------------Страница Портфолио------------------ */
+
+/* Фильтр-кнопки */
+.btn-all,
+.btn-web,
+.btn-app,
+.btn-design,
+.btn-marketing {
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.03em;
+border-radius: 4px;
+color: -var(--primary-text-color);
+background-color: var(--background-secondary-color);
+border: none;
+cursor: pointer;
+}
+
+.btn-all:hover,
+.btn-all:focus,
+.btn-web:hover,
+.btn-web:focus,
+.btn-app:hover,
+.btn-app:focus,
+.btn-design:hover,
+.btn-design:focus,
+.btn-marketing:hover,
+.btn-marketing:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* Проекты */
+.projects-list-link {
+  text-decoration: none;
+}
+
+.projects-list-name {
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--primary-text-color);
+}
+
+.projects-list-product {
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+color: var(--secondary-text-color);
+}
