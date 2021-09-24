@@ -30,14 +30,15 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Шапка сайта */
-
 .container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-}
+  }
+
+/* Шапка сайта */
+
 
 .header-container {
   display: flex;
@@ -148,9 +149,14 @@ color: var(--primary-white-color)
   color: var(--accent-color);
 }
 
+
 /* Герой */
 .hero {
   background-color: var(--background-color);
+}
+
+.header-container {
+  
 }
 
 .hero-title {
@@ -180,6 +186,7 @@ color: var(--primary-white-color)
   background-color: var(--accent-color);
   cursor: pointer;
   border: none;
+
 }
 
 /* Преимущества */
