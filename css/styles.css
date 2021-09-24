@@ -37,9 +37,6 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  
-
-  background-color: peachpuff;
 }
 
 .header-container {
@@ -63,26 +60,37 @@ margin-right: 50px;
 }
 
 
-
 .header-contacts-container {
   display: flex;
-  justify-content: space-between;
-  margin-left: auto;
+    margin-left: auto;
+  }
+
+.header-contacts-item:not(:last-child) {
+margin-right: 50px;
 }
 
-.header-contacts-link:not(:first-child) {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 50px;
-}
+
 
 .header-link {
+  display: block;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-contacts-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 }
 
 
@@ -131,16 +139,6 @@ color: var(--primary-white-color)
   text-decoration: none;
 }
 
-
-.header-contacts-link {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
-}
 
 .header-link:hover {
   color: var(--accent-color);
