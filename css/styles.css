@@ -253,11 +253,12 @@ img {
   height: auto;
 }
 
-.section-services {
+.services-section {
   padding-bottom: 94px;
 }
 
-.services-title {
+.services-title, 
+.team-title {
 margin-top: 0;
 margin-bottom: 50px;
 font-weight: bold;
@@ -278,17 +279,23 @@ flex-basis: calc(100% / 3) ;
 margin-right: var(--card-set-gap);
 }
 
+
 /* Команда */
+
 .team-section {
-  background-color: var(--background-secondary-color)
+  background-color: var(--background-secondary-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.team-title {
+/* .team-title {
+margin-top: 0;
+margin-bottom: 50px;
 font-weight: bold;
 font-size: 36px;
-line-height: 1.16x;
-color: var(--primary-text-color);
-}
+line-height: 1.17;
+text-align: center;
+} */
 
 .team-name {
 font-style: normal;
