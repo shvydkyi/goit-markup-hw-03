@@ -43,7 +43,8 @@ body {
   }
 
 
-/* Шапка сайта */
+
+/* --------------------------Шапка сайта----------------------- */
 
 
 .header-container {
@@ -103,6 +104,7 @@ margin-right: 50px;
 
 
 /* Логотип */
+
 .logo {
   
   font-family: Raleway;
@@ -156,7 +158,8 @@ color: var(--primary-white-color)
 }
 
 
-/* Герой */
+/* ----------------------Герой--------------------- */
+
 .hero {
   display: flex;
   background-color: var(--background-color);
@@ -207,7 +210,7 @@ color: var(--primary-white-color)
 }
 
 
-/* Преимущества */
+/* -------------------Преимущества---------------- */
 
 .features-section {
 padding-top: 94px;
@@ -280,7 +283,7 @@ margin-right: var(--card-set-gap);
 }
 
 
-/* Команда */
+/* ------------------------Команда----------------------- */
 
 .team-section {
   background-color: var(--background-secondary-color);
@@ -338,10 +341,16 @@ text-align: center;
 color: var(--secondary-text-color);
 }
 
+
 /* Футер */
+
+
 .footer-section {
-  background-color: var(--background-color);
+padding-top: 60px;
+padding-bottom: 60px;
+background-color: var(--background-color);
 }
+
 .footer-adress {
 font-style: normal;
 font-size: 14px;
