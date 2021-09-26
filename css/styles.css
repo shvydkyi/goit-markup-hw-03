@@ -246,12 +246,36 @@ margin-right: var(--card-set-gap);
 }
 
 /* Услуги */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section-services {
+  padding-bottom: 94px;
+}
+
 .services-title {
+margin-top: 0;
+margin-bottom: 50px;
 font-weight: bold;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
-color: var(--primary-text-color);
+}
+
+.services-list {
+  display: flex;
+}
+
+.services-list-item {
+flex-basis: calc(100% / 3) ;  
+}
+
+.services-list-item:not(:last-child) {
+margin-right: var(--card-set-gap);
 }
 
 /* Команда */
