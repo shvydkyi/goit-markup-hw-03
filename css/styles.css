@@ -5,6 +5,7 @@
   --accent-color: #2196f3;
   --background-color: #2f303a;
   --background-secondary-color: #F5F4FA;
+  --card-set-gap: 30px;
 }
 
 
@@ -14,7 +15,6 @@ p,
 h1,
 h2,
 h3,
-li
 {
   margin: 0;
 }
@@ -43,7 +43,8 @@ body {
   }
 
 
-/* Шапка сайта */
+
+/* --------------------------Шапка сайта----------------------- */
 
 
 .header-container {
@@ -103,6 +104,7 @@ margin-right: 50px;
 
 
 /* Логотип */
+
 .logo {
   
   font-family: Raleway;
@@ -156,9 +158,13 @@ color: var(--primary-white-color)
 }
 
 
-/* Герой */
+/* ----------------------Герой--------------------- */
+
 .hero {
+  display: flex;
   background-color: var(--background-color);
+  height: 600px;
+  align-items: center;
 }
 
 .hero-container {
@@ -204,8 +210,20 @@ color: var(--primary-white-color)
 }
 
 
-/* Преимущества */
+/* -------------------Преимущества---------------- */
+
+.features-section {
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
+.features-list {
+  display: flex;
+}
+
 .features-title {
+margin-top: 0;
+margin-bottom: 10px;
 font-weight: bold;
 font-size: 14px;
 line-height: 1.14;
@@ -214,33 +232,97 @@ color: var(--primary-text-color);
 }
 
 .features-text {
+margin-top: 0;
+margin-bottom: 0;
 font-size: 14px;
 line-height: 1.71;
 color: var(--secondary-text-color);
 }
 
+.features-list > .features-list-container {
+flex-basis: calc(100% / 4 - var(--card-set-gap));
+margin-right: var(--card-set-gap);
+}
+
+.features-list-container:not(:nth-last-child) {
+  margin-right: var(--card-set-gap);
+}
+
 /* Услуги */
-.services-title {
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.services-section {
+  padding-bottom: 94px;
+}
+
+.services-title, 
+.team-title {
+margin-top: 0;
+margin-bottom: 50px;
 font-weight: bold;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
-color: var(--primary-text-color);
 }
 
-/* Команда */
+.services-list {
+  display: flex;
+}
+
+.services-list-item {
+flex-basis: calc(100% / 3) ;  
+}
+
+.services-list-item:not(:last-child) {
+margin-right: var(--card-set-gap);
+}
+
+
+/* ------------------------Команда----------------------- */
+
 .team-section {
-  background-color: var(--background-secondary-color)
+  background-color: var(--background-secondary-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.team-title {
+/* .team-title {
+margin-top: 0;
+margin-bottom: 50px;
 font-weight: bold;
 font-size: 36px;
-line-height: 1.16x;
-color: var(--primary-text-color);
+line-height: 1.17;
+text-align: center;
+} */
+
+.team-list-section {
+display: flex;
+margin-right: calc(-1 * var(--card-set-gap))
+}
+
+.team-list-item {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-right: var(--card-set-gap);
+}
+
+.team-card {
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-card-content {
+  padding: 30px 0;
 }
 
 .team-name {
+margin-top: 0;
+margin-bottom: 10px;  
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -250,6 +332,8 @@ color: var(--primary-text-color);
 }
 
 .team-position {
+margin-top: 0;
+margin-bottom: 0;
 font-weight: normal;
 font-size: 16px;
 line-height: 1.19;
@@ -257,22 +341,36 @@ text-align: center;
 color: var(--secondary-text-color);
 }
 
+
 /* Футер */
+
+
 .footer-section {
-  background-color: var(--background-color);
+padding-top: 60px;
+padding-bottom: 60px;
+background-color: var(--background-color);
 }
+
+.footer-logo {
+margin-bottom: 20px;
+}
+
 .footer-adress {
+display: block;
 font-style: normal;
 font-size: 14px;
 line-height: 1.71;
 color: var(--primary-white-color);
+margin-bottom: 9px;
 }
 
 .footer-contacts {
+display: block;
 font-style: normal;
 font-size: 14px;
 line-height: 1.71;
 color: rgba(255, 255, 255, 0.6);
+margin-bottom: 9px;
 }
 
 /* ----------------------Страница Портфолио------------------ */
