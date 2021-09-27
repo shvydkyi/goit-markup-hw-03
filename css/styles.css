@@ -5,6 +5,7 @@
   --accent-color: #2196f3;
   --background-color: #2f303a;
   --background-secondary-color: #F5F4FA;
+  --btn-color: #188ce8;
   --card-set-gap: 30px;
 }
 
@@ -211,7 +212,11 @@ color: var(--primary-white-color)
   display: inline-block;
   min-width: 200px;
   padding: 10px 32px;
+}
 
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--btn-color) ;
 }
 
 
