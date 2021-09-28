@@ -59,31 +59,23 @@ body {
 }
 
 
-.header-list {
+.header-navigation {
+  display: flex;
+  /* align-items: center; */
+}
+
+.site-nav {
   display: flex;
   align-items: center;
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
 }
 
 .header-item:not(:last-child) {
 margin-right: 50px;
 }
-
-.header-navigation {
-  display: flex;
-  align-items: center;
-}
-
-
-.header-contacts-container {
-  display: flex;
-    margin-left: auto;
-  }
-
-.header-contacts-item:not(:last-child) {
-margin-right: 50px;
-}
-
-
 
 .header-link {
   display: block;
@@ -97,6 +89,21 @@ margin-right: 50px;
   padding-bottom: 32px;
 }
 
+.header-contacts-list {
+  display: flex;
+  margin-left: auto;
+
+}
+
+.header-contacts {
+  display: flex;
+  }
+
+.header-contacts-item:not(:last-child) {
+margin-right: 50px;
+}
+
+
 .header-contacts-link {
   font-family: Roboto;
   font-style: normal;
@@ -105,8 +112,16 @@ margin-right: 50px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
+.header-link:hover,
+.header-link:focus, 
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--accent-color);
+}
 
 
 /* Логотип */
@@ -118,11 +133,15 @@ margin-right: 50px;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-    color: var(--accent-color);
+  color: var(--accent-color);
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
 }
 
 .logo-black {
-  margin-right: 93px;
+  
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -136,7 +155,8 @@ font-style: normal;
 font-weight: bold;
 font-size: 26px;
 line-height: 1.19;
-color: var(--primary-white-color)
+color: var(--primary-white-color);
+margin-left: -93px;
 }
 
 .logo-black:hover,
@@ -154,11 +174,6 @@ color: var(--primary-white-color)
   text-decoration: none;
 }
 
-
-.header-link:hover 
-.header-link:focus {
-  color: var(--accent-color);
-}
 
 
 /* ----------------------Герой--------------------- */
