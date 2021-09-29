@@ -456,7 +456,16 @@ min-width: 73px;
 .btn-design:hover,
 .btn-design:focus,
 .btn-marketing:hover,
-.btn-marketing:focus {
+.btn-marketing:focus,
+.btn-active:hover,
+.btn-active:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+
+
+.btn-list .btn-all.current {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
