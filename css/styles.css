@@ -180,15 +180,15 @@ margin-left: -93px;
 
 .hero {
   display: flex;
-  background-color: var(--background-color);
   height: 600px;
   align-items: center;
+  background-color: var(--background-color);
+  padding: 200px 0;
 }
 
 .hero-container {
- text-align: center;
- padding: 200px 0;
- max-width: 696px;
+  text-align: center;
+  max-width: 696px;
 
 }
 
