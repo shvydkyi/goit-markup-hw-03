@@ -379,6 +379,7 @@ background-color: var(--background-color);
 }
 
 .footer-logo {
+display: block;
 margin-bottom: 20px;
 }
 
@@ -398,6 +399,13 @@ font-size: 14px;
 line-height: 1.71;
 color: rgba(255, 255, 255, 0.6);
 margin-bottom: 6px;
+}
+
+.footer-adress:hover,
+.footer-adress:focus,
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--accent-color);
 }
 
 /* ----------------------Страница Портфолио------------------ */
