@@ -261,12 +261,16 @@ line-height: 1.71;
 color: var(--secondary-text-color);
 }
 
-.features-list > .features-list-container {
+.features-list {
+  margin-right: -30px;
+}
+
+.features-list-item {
 flex-basis: calc(100% / 4 - var(--card-set-gap));
 margin-right: var(--card-set-gap);
 }
 
-.features-list-container:not(:nth-last-child) {
+.features-list-item:not(:nth-last-child) {
   margin-right: var(--card-set-gap);
 }
 
@@ -290,6 +294,7 @@ font-weight: bold;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
+color: var(--primary-text-color);
 }
 
 .services-list {
