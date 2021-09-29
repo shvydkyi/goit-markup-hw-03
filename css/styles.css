@@ -297,7 +297,7 @@ text-align: center;
 }
 
 .services-list-item {
-flex-basis: calc(100% / 3) ;  
+flex-basis: calc(100% - 2 * 30px / 3) ;  
 }
 
 .services-list-item:not(:last-child) {
